@@ -28,6 +28,10 @@ const nav__links = [
         path: 'cart',
         display: 'Giỏ hàng'
     },
+    {
+        path: 'myorder',
+        display: 'Đơn hàng'
+    }
 ];
 
 const Header = () => {
@@ -57,11 +61,13 @@ const Header = () => {
     const logout = () => {
 
         signOut(auth).then(() => {
-            toast.success("Logged out");
+            toast.success("Đăng xuất");
             navigate("/home");
         }).catch(err => {
             toast.error(err.message);
         })
+
+
     }
 
 
@@ -140,6 +146,7 @@ const Header = () => {
                                         profileActionRef.current.classList.toggle("show__profileActions")
                                     }}
                                 />
+
                                 <div
                                     className="profile__actions "
                                     onClick={toggleProfileActions}
@@ -163,6 +170,7 @@ const Header = () => {
                                                 <Link to="/dashboard">Dashboard</Link> */}
                                                 </div>
                                             }
+                                            {/* <span className="btn-nav " >Đơn hàng</span> */}
                                             <span className="btn-nav " onClick={logout}>Đăng xuất</span>
 
                                         </div>) :

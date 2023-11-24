@@ -96,9 +96,9 @@ const AddProduct = () => {
                 <Row>
                     <Col lg="12">
                         {
-                            loading ? <h4 className="py-5">Loading.....</h4> : <>
+                            loading ? <h4 className="py-5">Đang tải....</h4> : <>
 
-                                <h4 className="mb-5">Add Product</h4>
+                                <h4 className="mb-5">Thêm sản phẩm</h4>
                                 <div >
                                     <div className="form__group">
                                         <span>Tên sản phẩm</span>
@@ -142,7 +142,7 @@ const AddProduct = () => {
                                     </div>
 
                                 </div>
-                                <button onClick={addProduct} className="buy__btn" type="submit">Thêm sản phẩm</button>
+                                <button onClick={addProduct} className="buy__btn" type="submit">Thêm</button>
                             </>
                         }
                     </Col>

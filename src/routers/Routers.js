@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Shop from "../pages/Shop";
 import Cart from "../pages/Cart";
+import MyOrder from "../pages/MyOrder";
 import ProductDetails from "../pages/ProductDetails";
 import Checkout from "../pages/Checkout";
 import Login from "../pages/Login";
@@ -22,6 +23,7 @@ const Routers = () => {
         <Route path="shop" element={<Shop />} />
         <Route path="shop/:id" element={<ProductDetails />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="myorder" element={<MyOrder />} />
 
         <Route path="/*" element={<ProtectedRoute />}>
             <Route path="checkout" element={<Checkout />} />

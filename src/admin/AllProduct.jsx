@@ -12,7 +12,7 @@ const AllProduct = () => {
 
     const deleteProduct = async (id) => {
         await deleteDoc(doc(db, "products", id));
-        toast.success("Deleted.!");
+        toast.success("Đã xóa.!");
     }
     return (
         <section>
@@ -33,7 +33,7 @@ const AllProduct = () => {
                             </thead>
                             <tbody>
                                 {loading ? (
-                                    <h4 className="py-5 text-center fw-bold">Loading...</h4>
+                                    <h4 className="py-5 text-center fw-bold">Đang tải....</h4>
                                 ) : (
                                     productsData.map(item => (
                                         <tr key={item.id}>

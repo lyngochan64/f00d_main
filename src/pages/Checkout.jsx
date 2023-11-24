@@ -54,10 +54,11 @@ const Checkout = () => {
       await setDoc(doc(db, "orders", uuidv4()), data);
 
       setLoading(false);
-      toast.success("Dat Hang Thanh Cong");
+      toast.success("Đặt hàng thành công");
       navigate("/");
     } catch (error) {
       setLoading(false);
+      console.error("Lỗi khi đặt hàng:", error);
       toast.error("Loi");
     }
 

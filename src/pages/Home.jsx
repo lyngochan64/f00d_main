@@ -110,7 +110,7 @@ const Home = () => {
                             <h2 className="section__title">Sảm phẩm chất lượng nhất</h2>
                         </Col>
                         {
-                            loading ? <h5 className="fw-bold">Loading...</h5> :
+                            loading ? <h5 className="fw-bold">Đang tải....</h5> :
                                 <ProductsList data={bestSalesProducts} />
                         }
 
@@ -146,7 +146,7 @@ const Home = () => {
                             <h2 className="section__title">Sản phẩm mới</h2>
                         </Col>
                         {
-                            loading ? <h5 className="fw-bold">Loading...</h5> :
+                            loading ? <h5 className="fw-bold">Đang tải....</h5> :
                                 <ProductsList data={mobileProducts} />
                         }
                         {/* {
@@ -165,7 +165,7 @@ const Home = () => {
                             <h2 className="section__title">Phổ biến trong danh mục</h2>
                         </Col>
                         {
-                            loading ? <h5 className="fw-bold">Loading...</h5> :
+                            loading ? <h5 className="fw-bold">Đang tải....</h5> :
                                 <ProductsList data={popularProducts} />
                         }
 

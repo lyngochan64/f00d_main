@@ -27,7 +27,7 @@ const Login = () => {
             const user = userCredential.user
             console.log(user)
             setLoading(false)
-            toast.success("Successfully logged in")
+            toast.success("Đăng nhập thành công")
             navigate('/')
 
 
@@ -45,7 +45,7 @@ const Login = () => {
                     <Row>
                         {
                             loading ? <Col lg="12" className="text-center"><h5
-                                className="fw-bold">Loading.....</h5></Col> : <Col lg="6" className="m-auto text-center">
+                                className="fw-bold">Đang tải.....</h5></Col> : <Col lg="6" className="m-auto text-center">
                                 <h3 className="fw-bold mb-4">Đăng nhập</h3>
 
                                 <Form className="auth__form" onSubmit={signIn}>
@@ -54,7 +54,7 @@ const Login = () => {
                                     </FormGroup>
 
                                     <FormGroup className="form__group">
-                                        <input type="password" placeholder="Nhập password" value={password} onChange={e => setPassword(e.target.value)} />
+                                        <input type="password" placeholder="Nhập mật khẩu" value={password} onChange={e => setPassword(e.target.value)} />
                                     </FormGroup>
 
                                     <button type="submit" style={{ width: "173px" }}  className="buy__btn auth__btn">Đăng nhập</button>

@@ -22,7 +22,7 @@ const ProductCard = ({ item }) => {
 
         })
         );
-        toast.success("Product added successfully")
+        toast.success("Thêm sản phẩm thành công")
     };
     return (
         <Col lg=" 3" md="4" className="mb-2">

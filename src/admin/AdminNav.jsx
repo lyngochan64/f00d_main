@@ -67,7 +67,7 @@ const AdminNav = () => {
     const logout = () => {
 
         signOut(auth).then(() => {
-            toast.success("Logged out");
+            toast.success("Đăng xuất");
             navigate("/home");
         }).catch(err => {
             toast.error(err.message);

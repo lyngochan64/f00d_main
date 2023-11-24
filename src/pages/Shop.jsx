@@ -73,6 +73,7 @@ const Shop = () => {
 
         const searchedProducts = Allproducts?.filter(i => i.title.toLowerCase().includes(searchTerm.toLowerCase()))
         // filter == '' ? collection(db, "products") : query(collection(db, "products"), where("category", "==", filter));
+        
         console.log(searchedProducts)
         if (searchedProducts == '' || searchTerm == '') {
             // searchedProducts(productsData2)

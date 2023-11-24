@@ -12,7 +12,7 @@ const Users = () => {
 
     const deleteUser = async (id) => {
         await deleteDoc(doc(db, "users", id));
-        toast.success("User deleted.!")
+        toast.success("Đã xóa.!")
     }
     return (
         <section>
@@ -34,7 +34,7 @@ const Users = () => {
                             <tbody>
                                 {
                                     loading ? (
-                                        <h5 className="pt-5 fw-bold">Loading...</h5>
+                                        <h5 className="pt-5 fw-bold">Đang tải....</h5>
                                     ) : (
                                         usersData?.map(user => (
                                             <tr key={user.uid}>

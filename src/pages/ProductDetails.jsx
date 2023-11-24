@@ -82,7 +82,7 @@ const ProductDetails = () => {
             rating,
         };
         console.log(reviewObj);
-        toast.success("Review submitted");
+        toast.success("Đã gửi");
     };
 
     const addToCart = () => {
@@ -94,7 +94,7 @@ const ProductDetails = () => {
 
         })
         );
-        toast.success("Product added successfully");
+        toast.success("Thêm sản phẩm thành công");
     };
     // console.log(products?.cmt)
     const handleChangeComment = () => {
@@ -112,7 +112,7 @@ const ProductDetails = () => {
                     }
                 )
             })
-            toast.success("Review submitted");
+            toast.success("Đã gửi");
             getProduct()
 
         } catch (error) {
